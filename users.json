@@ -1,13 +1,5 @@
 [
   {
-    "email": "test@test.com"
-  },
-  {
-    "email": "johnSmith@abc.com",
-    "password": "123456",
-    "id": "87d5d6f5"
-  },
-  {
     "email": "123@123.com",
     "password": "995ae18b5cc2a76f0570159cc1c054ab2966f4e48711e24417901d4d64dd0a3a720067a8697c0ee89c3e8cf01f0cb21cc451c29651c1e34e60c204b1ef86d90b.f0c014d8a5749feb",
     "id": "44827d26"
@@ -21,5 +13,10 @@
     "email": "abc123@abc.com",
     "password": "2d8415c851bd1b8dafd266e4f3df04d26b6b6a0537fb7dd756764d5ca621e4ee960f3a8e6f53d701165516e0b3443cec72df1b032c977a0e364bccf93d66264d.29521bd017b11f97",
     "id": "e2fdc443"
+  },
+  {
+    "email": "wendyteowy@gmail.com",
+    "password": "b06e5bd1d92a9fb60c0c11174ae7faf5149069c76dda631630de516c484def4a532a7c9ba4292ac00e0449db704d38f20e3a187843dfc69ec4c33bc23fff20a9.2a584e21a783915c",
+    "id": "c419572b"
   }
 ]
