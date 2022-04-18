@@ -5,6 +5,7 @@ const authRouter = require("./routes/admin/auth");
 
 const app = express();
 
+app.use(express.static("public")); // this gives you access to any files saved in the public folder
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieSession({
     keys: ["jhjfkhxkbnzmuyzcx"]
