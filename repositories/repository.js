@@ -19,7 +19,7 @@ module.exports = class Repository {
         attrs.id = this.randomId();
         
         const records = await this.getAll();
-        records.push(attr);
+        records.push(attrs);
         await this.writeAll(records);
         
         return attrs;
@@ -28,11 +28,15 @@ module.exports = class Repository {
     async getAll() {
         return JSON.parse(await fs.promises.readFile(this.filename, { 
             encoding: "utf8"
-        }));
+        })
+        );
     }
 
     async writeAll(records) {
-        await fs.promises.writeFile(this.filename, JSON.stringify(records, null, 2));
+        await fs.promises.writeFile(
+            this.filename, 
+            JSON.stringify(records, null, 2)
+        );
     }
 
     randomId() {
@@ -67,6 +71,7 @@ module.exports = class Repository {
         
         for (let record of records) {
             let found = true;
+
             for (let key in filters) {
                 if (record[key] !== filters[key]) {
                     found = false;
@@ -76,6 +81,7 @@ module.exports = class Repository {
             if (found) {
                 return record;
             }
-         }
+        }
     }
-}
+    
+};
