@@ -57,8 +57,10 @@ module.exports = ({ content }) => {
               </div>
             </nav>
           </header>
+          
   
           ${content}
+          <script src="index.js"></script>
         </body>
       </html>
     `;
